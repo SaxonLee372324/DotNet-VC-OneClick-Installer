@@ -11,15 +11,5 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-echo =========================================
-echo  DotNet + VC++ OneClick Installer
-echo =========================================
-echo.
-
 powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0install.ps1"
 
-echo.
-echo =========================================
-echo Script finished. Press any key to exit.
-echo =========================================
-pause
